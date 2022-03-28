@@ -1,0 +1,14 @@
+button {
+  margin: 30px auto 20px;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  background: rgb(248, 121, 255);
+  background: linear-gradient(180deg, rgb(248, 121, 255) 0%, rgb(158, 86, 220) 100%);
+  width: 230px;
+  height: 50px;
+  letter-spacing: .5px;
+  box-shadow: $the-box-shadows;
+  cursor: pointer;
+}

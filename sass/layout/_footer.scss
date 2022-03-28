@@ -1,0 +1,25 @@
+footer {
+  background: #333;
+  color: #fff;
+  padding: 30px;
+
+  h3 {
+    font-family: $title-font;
+    letter-spacing: .5px;
+    padding-bottom: 20px;
+  }
+
+  ul {
+    line-height: 1.7;
+    font-weight: 300;
+
+    li {
+      list-style-type: none;
+
+      svg {
+        margin-right: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}

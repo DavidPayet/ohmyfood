@@ -1,0 +1,23 @@
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin cta-functioning {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: $the-box-shadows;
+  margin-left: -10px;
+}
+
+@mixin cta-svg {
+  margin: 0 30px;
+  font-size: 20px;
+}
