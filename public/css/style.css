@@ -1,3 +1,229 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 32px;
+  letter-spacing: 1.5px;
+}
+
+button {
+  margin: 30px auto 20px;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  background: #f879ff;
+  background: linear-gradient(180deg, #f879ff 0%, #9e56dc 100%);
+  width: 230px;
+  height: 50px;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 6px 16px -4px rgba(0, 0, 0, 0.413);
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+}
+
+.location {
+  width: 100vw;
+  letter-spacing: 0.5px;
+}
+.location form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: #e5e5e5;
+  box-shadow: 0px 4px 3px -1px #cececebf inset;
+}
+.location form label {
+  font-size: 18px;
+}
+.location form label svg {
+  padding-bottom: 5px;
+}
+.location form input {
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  background: transparent;
+  outline: none;
+  margin-left: -10px;
+}
+.location .description {
+  background: #f9f9f9;
+  padding: 45px 0;
+  text-align: center;
+  font-size: 18px;
+}
+.location .description__title {
+  padding: 0 40px 20px;
+}
+.location .description__txt {
+  font-weight: 300;
+}
+
+.functioning {
+  padding: 50px 20px;
+}
+.functioning h2 {
+  padding-bottom: 30px;
+}
+.functioning .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.functioning .cta__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: #9356DC;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  z-index: 99;
+}
+.functioning .cta__content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0px 6px 16px -4px rgba(0, 0, 0, 0.413);
+  margin-left: -10px;
+  background: #f9f9f9;
+}
+.functioning .cta__content svg {
+  margin: 0 30px;
+  font-size: 20px;
+  color: #878787;
+}
+.functioning .cta__content--purple {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0px 6px 16px -4px rgba(0, 0, 0, 0.413);
+  margin-left: -10px;
+  background: #9256dc22;
+}
+.functioning .cta__content--purple svg {
+  margin: 0 30px;
+  font-size: 20px;
+  color: #9356DC;
+}
+
+.restaurants {
+  background: #f9f9f9;
+  padding: 50px 20px;
+}
+.restaurants h2 {
+  padding-bottom: 30px;
+}
+.restaurants .restaurants-container {
+  width: 100%;
+}
+.restaurants .restaurants-container .card-link {
+  text-decoration: none;
+  color: #333;
+}
+.restaurants .restaurants-container .card {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  background: #fff;
+  padding-bottom: 25px;
+  box-shadow: 0px 6px 16px -4px rgba(0, 0, 0, 0.413);
+  margin-bottom: 20px;
+  position: relative;
+}
+.restaurants .restaurants-container .card__img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.restaurants .restaurants-container .card__body {
+  padding: 10px 20px 10px 15px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.restaurants .restaurants-container .card__body .card-description {
+  font-size: 18px;
+  font-weight: 300;
+}
+.restaurants .restaurants-container .card__body svg {
+  color: #333;
+  font-size: 25px;
+  margin-top: 8px;
+}
+.restaurants .restaurants-container .card.new::after {
+  content: "Nouveau";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #81deca;
+  color: #548e81;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 30px;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  letter-spacing: 0.5px;
+  padding-bottom: 20px;
+}
+footer ul {
+  line-height: 1.7;
+  font-weight: 300;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer ul li svg {
+  margin-right: 10px;
+  font-size: 14px;
+}
 
 /*# sourceMappingURL=style.css.map */
