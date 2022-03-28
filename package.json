@@ -1,12 +1,21 @@
 {
   "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:public/css/style.css",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "author": "david",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidPayet/ohmyfood.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DavidPayet/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/DavidPayet/ohmyfood#readme",
+  "description": "",
+  "browserslist": "last 4 versions"
 }
