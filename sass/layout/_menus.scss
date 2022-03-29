@@ -1,0 +1,93 @@
+.menu-img {
+  width: 100%;
+  height: 250px;
+  z-index: -1;
+  position: absolute;
+  object-fit: cover;
+}
+
+.menu {
+  background: $colour-grey;
+  border-radius: 40px 40px 0 0;
+  margin-top: 200px;
+  width: 100%;
+  padding: 20px 20px 40px;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-family: $title-font;
+      font-size: 26px;
+    }
+
+    svg {
+      font-size: 25px;
+      padding-right: 20px;
+    }
+  }
+
+  &__categories {
+    width: 100%;
+
+    .category {
+      font-weight: 300;
+      letter-spacing: .5px;
+      margin: 40px 0 20px;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 40px;
+        border: 2px solid $colour-green;
+        position: absolute;
+        left: 0;
+        bottom: -7px;
+      }
+    }
+
+    .item {
+      background: #fff;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: $the-box-shadows;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      margin-bottom: 20px;
+
+      &__dish {
+        line-height: 1.4;
+        max-width: 85%;
+
+        h3 {
+          font-weight: 500;
+          font-size: 17px
+        }
+
+        p {
+          width: 100%;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          font-size: 15px;
+          font-weight: 300;
+        }
+      }
+
+      &__price {
+        display: flex;
+        align-items: flex-end;
+        font-weight: 500;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  button {
+    @include center-flex;
+    margin-top: 50px;
+  }
+}

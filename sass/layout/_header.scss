@@ -2,4 +2,12 @@ header {
   @include center-flex;
   width: 100vw;
   height: 60px;
+  position: relative;
+
+  a {
+    font-size: 20px;
+    position: absolute;
+    left: 25px;
+    color: #333;
+  }
 }
