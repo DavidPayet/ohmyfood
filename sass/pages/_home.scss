@@ -1,5 +1,5 @@
 .location {
-  width: 100vw;
+  width: 100%;
   letter-spacing: .5px;
 
   form {
@@ -7,6 +7,10 @@
     height: 50px;
     background: #e5e5e5;
     box-shadow: 0px 4px 3px -1px #cececebf inset;
+    
+    @media screen and (min-width: 1024px) {
+      border-radius: 20px 20px 0 0;
+    }
 
 
     label {
@@ -33,6 +37,10 @@
     text-align: center;
     font-size: 18px;
 
+    @media screen and (min-width: 1024px) {
+      border-radius: 0 0 20px 20px;
+    }
+
     &__title {
       padding: 0 40px 20px;
     }
@@ -54,6 +62,11 @@
     @include center-flex;
     margin-bottom: 25px;
     cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 30%;
+      margin-right: 30%;
+    }
 
     &__number {
       @include center-flex;
@@ -78,12 +91,12 @@
 
     &__content--purple {
       @include cta-functioning;
-        background: #9256dc22;
+      background: #9256dc22;
 
-        & svg {
-          @include cta-svg;
-          color: $colour-primary;
-        }
+      & svg {
+        @include cta-svg;
+        color: $colour-primary;
+      }
     }
   }
 }
@@ -92,12 +105,26 @@
   background: $colour-grey;
   padding: 50px 20px;
 
+  @media screen and (min-width: 1024px) {
+    border-radius: 20px;
+    margin-bottom: 80px;
+  }
+
   h2 {
     padding-bottom: 30px;
   }
 
   .restaurants-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
 
     .card-link {
       text-decoration: none;
@@ -113,7 +140,12 @@
       box-shadow: $the-box-shadows;
       margin-bottom: 20px;
       position: relative;
-      
+
+      @media screen and (min-width:768px) {
+        width: 40vw;
+        margin-bottom: 50px;
+      }
+
       &__img {
         border-radius: 20px 20px 0 0;
         width: 100%;
