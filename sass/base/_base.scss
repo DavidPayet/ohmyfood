@@ -9,3 +9,9 @@
 body {
   background: #fff;
 }
+
+main {
+  @media screen and (min-width: 1024px) {
+    margin: 0 10%;
+  }
+}
