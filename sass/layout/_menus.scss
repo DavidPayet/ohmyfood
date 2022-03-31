@@ -42,11 +42,12 @@
       letter-spacing: .5px;
       margin: 40px 0 20px;
       position: relative;
+      @include slide-right;
 
       &::after {
         content: "";
         width: 40px;
-        border: 2px solid $colour-green;
+        border: 2px solid $colour-tertiary;
         position: absolute;
         left: 0;
         bottom: -7px;
@@ -62,6 +63,7 @@
       justify-content: space-between;
       cursor: pointer;
       margin-bottom: 20px;
+      @include slide-top;
 
       &__dish {
         line-height: 1.4;

@@ -11,4 +11,11 @@ button {
   letter-spacing: .5px;
   box-shadow: $the-box-shadows;
   cursor: pointer;
+
+  &:hover {
+    background: rgb(249, 141, 255);
+    background: linear-gradient(180deg, rgb(249, 141, 255) 0%, rgb(165, 101, 222) 100%);
+    box-shadow: 0px 10px 16px -4px rgba(0, 0, 0, 0.529);
+    transition: all .1s ease-out;
+  }
 }

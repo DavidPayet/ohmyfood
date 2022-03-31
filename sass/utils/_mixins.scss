@@ -21,3 +21,45 @@
   margin: 0 30px;
   font-size: 20px;
 }
+
+@mixin slide-top {
+  animation: slide-top .5s ease-in-out forwards;
+  opacity: 0;  
+
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}) {
+      animation-delay: $i * .2s;
+    }
+  }
+  @keyframes slide-top {
+    from {
+      transform: translateY(20px);
+    }
+    
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin slide-right {
+  animation: slide-right .5s ease-in-out forwards;
+  opacity: 0;  
+
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i}) {
+      animation-delay: $i * .2s;
+    }
+  }
+  @keyframes slide-right {
+    from {
+      transform: translateX(-20px);
+    }
+    
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}

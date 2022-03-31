@@ -42,6 +42,12 @@ button {
   box-shadow: 0px 5px 16px -4px rgba(0, 0, 0, 0.413);
   cursor: pointer;
 }
+button:hover {
+  background: #f98dff;
+  background: linear-gradient(180deg, #f98dff 0%, #a565de 100%);
+  box-shadow: 0px 10px 16px -4px rgba(0, 0, 0, 0.529);
+  transition: all 0.1s ease-out;
+}
 
 header {
   display: flex;
@@ -100,11 +106,31 @@ header a {
   letter-spacing: 0.5px;
   margin: 40px 0 20px;
   position: relative;
+  animation: slide-right 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+.menu__categories .category:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.menu__categories .category:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.menu__categories .category:nth-child(3) {
+  animation-delay: 0.6s;
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .menu__categories .category::after {
   content: "";
   width: 40px;
-  border: 2px solid #81deca;
+  border: 2px solid #99E2D0;
   position: absolute;
   left: 0;
   bottom: -7px;
@@ -118,6 +144,32 @@ header a {
   justify-content: space-between;
   cursor: pointer;
   margin-bottom: 20px;
+  animation: slide-top 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+.menu__categories .item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.menu__categories .item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.menu__categories .item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.menu__categories .item:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.menu__categories .item:nth-child(5) {
+  animation-delay: 1s;
+}
+@keyframes slide-top {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .menu__categories .item__dish {
   line-height: 1.4;
@@ -366,7 +418,7 @@ footer ul li a {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: #81deca;
+  background: #99E2D0;
   color: #548e81;
   padding: 5px 10px;
   border-radius: 3px;
