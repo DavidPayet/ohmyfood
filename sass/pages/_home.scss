@@ -43,15 +43,13 @@ main {
           @include cta-svg;
           color: rgb(135, 135, 135);
         }
-      }
 
-      &__content--purple {
-        @include cta-functioning;
-        background: #9256dc22;
+        &:hover {
+          background: #9256dc22;
 
-        & svg {
-          @include cta-svg;
-          color: $colour-primary;
+          & svg {
+            color: $colour-primary;
+          }
         }
       }
     }
