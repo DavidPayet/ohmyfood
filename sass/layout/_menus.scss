@@ -62,7 +62,6 @@
 
     .item {
       background: #fff;
-      padding: 10px;
       border-radius: 15px;
       box-shadow: $the-box-shadows;
       display: flex;
@@ -70,31 +69,78 @@
       cursor: pointer;
       margin-bottom: 20px;
       @include slide-top;
+      overflow: hidden;
 
-      &__dish {
-        line-height: 1.4;
-        max-width: 85%;
+      input {
+        appearance: none;
+        width: 100%;
+        height: 65px;
+        border-radius: 1rem;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
 
-        h3 {
-          font-weight: 500;
-          font-size: 17px
+        &:checked~.item__icone-check {
+          margin-right: 0;
+          transition: .5s ease;
         }
 
-        p {
-          width: 100%;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          overflow: hidden;
-          font-size: 15px;
-          font-weight: 300;
+        &:checked~.item__icone-check svg {
+          margin-right: 0;
+          transition: .5s ease;
+          transform: rotate(360deg);
         }
       }
 
-      &__price {
+      &__container {
+        width: 100%;
+        padding: 0 20px 0 10px;
+        min-height: 65px;
         display: flex;
-        align-items: flex-end;
-        font-weight: 500;
-        padding-right: 10px;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+
+        .dish {
+          line-height: 1.4;
+          padding: 10px;
+          min-width: 80%;
+
+          h3 {
+            font-weight: 500;
+            font-size: 17px
+          }
+
+          p {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 15px;
+            font-weight: 300;
+          }
+        }
+
+        .price {
+          font-weight: 500;
+          margin-bottom: -25px;
+        }
+      }
+
+      &__icone-check {
+        @include center-flex;
+        background: $colour-tertiary;
+        width: 80px;
+        margin-right: -80px;
+        transition: 0.5s ease;
+        border-radius: 0 15px 15px 0;
+
+        svg {
+          color: $colour-tertiary;
+          padding: 5px;
+          border-radius: 50%;
+          background: white;
+          transition-duration: 0.5s;
+        }
       }
     }
   }
