@@ -10,12 +10,6 @@ body {
   background: #fff;
 }
 
-@media screen and (min-width: 1024px) {
-  main {
-    margin: 0 10%;
-  }
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: #333;
@@ -53,15 +47,57 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
-  height: 60px;
   position: relative;
+}
+header h1 {
+  height: 60px;
+  padding-top: 10px;
 }
 header a {
   font-size: 20px;
   position: absolute;
   left: 25px;
   color: #333;
+}
+header .location {
+  width: 100%;
+  letter-spacing: 0.5px;
+}
+header .location form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: #e5e5e5;
+  box-shadow: 0px 4px 3px -1px #cececebf inset;
+}
+header .location form label {
+  font-size: 18px;
+}
+header .location form label svg {
+  padding-bottom: 5px;
+}
+header .location form input {
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  background: transparent;
+  outline: none;
+  margin-left: -10px;
+}
+header .location .description {
+  background: #f9f9f9;
+  padding: 45px 0;
+  text-align: center;
+  font-size: 18px;
+}
+header .location .description__title {
+  padding: 0 40px 20px;
+}
+header .location .description__txt {
+  font-weight: 300;
 }
 
 .menu-img {
@@ -81,8 +117,15 @@ header a {
 }
 @media screen and (min-width: 768px) {
   .menu {
-    margin: 200px 0 0;
+    width: auto;
+    margin: 200px 10% 80px;
+    border-radius: 40px;
     padding: 20px 20% 40px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .menu {
+    margin: 200px 15% 80px;
   }
 }
 .menu__title {
@@ -228,62 +271,23 @@ footer ul li a {
   color: #fff;
 }
 
-.location {
-  width: 100%;
-  letter-spacing: 0.5px;
-}
-.location form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  background: #e5e5e5;
-  box-shadow: 0px 4px 3px -1px #cececebf inset;
-}
 @media screen and (min-width: 1024px) {
-  .location form {
-    border-radius: 20px 20px 0 0;
+  main {
+    margin: 0 10%;
   }
 }
-.location form label {
-  font-size: 18px;
-}
-.location form label svg {
-  padding-bottom: 5px;
-}
-.location form input {
-  border: none;
-  font-size: 16px;
-  text-align: center;
-  background: transparent;
-  outline: none;
-  margin-left: -10px;
-}
-.location .description {
-  background: #f9f9f9;
-  padding: 45px 0;
-  text-align: center;
-  font-size: 18px;
-}
-@media screen and (min-width: 1024px) {
-  .location .description {
-    border-radius: 0 0 20px 20px;
+@media screen and (min-width: 1280px) {
+  main {
+    margin: 0 15%;
   }
 }
-.location .description__title {
-  padding: 0 40px 20px;
-}
-.location .description__txt {
-  font-weight: 300;
-}
-
-.functioning {
+main .functioning {
   padding: 50px 20px;
 }
-.functioning h2 {
+main .functioning h2 {
   padding-bottom: 30px;
 }
-.functioning .cta {
+main .functioning .cta {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,12 +295,12 @@ footer ul li a {
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  .functioning .cta {
+  main .functioning .cta {
     margin-left: 30%;
     margin-right: 30%;
   }
 }
-.functioning .cta__number {
+main .functioning .cta__number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -308,7 +312,7 @@ footer ul li a {
   font-size: 16px;
   z-index: 99;
 }
-.functioning .cta__content {
+main .functioning .cta__content {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -321,12 +325,12 @@ footer ul li a {
   margin-left: -10px;
   background: #f9f9f9;
 }
-.functioning .cta__content svg {
+main .functioning .cta__content svg {
   margin: 0 30px;
   font-size: 20px;
   color: #878787;
 }
-.functioning .cta__content--purple {
+main .functioning .cta__content--purple {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -339,42 +343,41 @@ footer ul li a {
   margin-left: -10px;
   background: #9256dc22;
 }
-.functioning .cta__content--purple svg {
+main .functioning .cta__content--purple svg {
   margin: 0 30px;
   font-size: 20px;
   color: #9356DC;
 }
-
-.restaurants {
+main .restaurants {
   background: #f9f9f9;
   padding: 50px 20px;
 }
 @media screen and (min-width: 1024px) {
-  .restaurants {
+  main .restaurants {
     border-radius: 20px;
     margin-bottom: 80px;
   }
 }
-.restaurants h2 {
+main .restaurants h2 {
   padding-bottom: 30px;
 }
-.restaurants .restaurants-container {
+main .restaurants .restaurants-container {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
-  .restaurants .restaurants-container {
+  main .restaurants .restaurants-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
-.restaurants .restaurants-container .card-link {
+main .restaurants .restaurants-container .card-link {
   text-decoration: none;
   color: #333;
 }
-.restaurants .restaurants-container .card {
+main .restaurants .restaurants-container .card {
   width: 100%;
   height: 250px;
   border-radius: 20px;
@@ -385,35 +388,41 @@ footer ul li a {
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .restaurants .restaurants-container .card {
-    width: 40vw;
+  main .restaurants .restaurants-container .card {
+    width: 35vw;
+    max-width: 400px;
     margin-bottom: 50px;
   }
 }
-.restaurants .restaurants-container .card__img {
+@media screen and (min-width: 1500px) {
+  main .restaurants .restaurants-container .card {
+    max-width: 500px;
+  }
+}
+main .restaurants .restaurants-container .card__img {
   border-radius: 20px 20px 0 0;
   width: 100%;
   height: 75%;
   object-fit: cover;
   overflow: hidden;
 }
-.restaurants .restaurants-container .card__body {
+main .restaurants .restaurants-container .card__body {
   padding: 10px 20px 10px 15px;
   line-height: 1.5;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.restaurants .restaurants-container .card__body .card-description {
+main .restaurants .restaurants-container .card__body .card-description {
   font-size: 18px;
   font-weight: 300;
 }
-.restaurants .restaurants-container .card__body svg {
+main .restaurants .restaurants-container .card__body svg {
   color: #333;
   font-size: 25px;
   margin-top: 8px;
 }
-.restaurants .restaurants-container .card.new::after {
+main .restaurants .restaurants-container .card.new::after {
   content: "Nouveau";
   position: absolute;
   top: 20px;
