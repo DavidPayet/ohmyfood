@@ -7,5 +7,13 @@
 }
 
 body {
+  font-family: $text-font;
+  color: #333;
   background: #fff;
+}
+
+h1 {
+  font-family: $title-font;
+  font-size: 32px;
+  letter-spacing: 1.5px;
 }
