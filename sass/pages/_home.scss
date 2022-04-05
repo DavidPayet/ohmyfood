@@ -41,7 +41,7 @@ main {
 
         & svg {
           @include cta-svg;
-          color: rgb(135, 135, 135);
+          color: #878787;
         }
 
         &:hover {
