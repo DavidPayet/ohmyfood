@@ -246,8 +246,8 @@ header .location .description__txt {
   font-size: 26px;
 }
 .menu__title svg {
-  font-size: 25px;
-  padding-right: 20px;
+  width: 30px;
+  height: 30px;
 }
 .menu__categories {
   width: 100%;
