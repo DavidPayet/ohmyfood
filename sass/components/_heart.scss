@@ -1,3 +1,8 @@
+#heart {
+width: 0;
+height: 0;
+}
+
 .heart-container {
   position: relative;
   @include center-flex;
