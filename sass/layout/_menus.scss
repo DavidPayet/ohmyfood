@@ -76,6 +76,7 @@
       @include slide-top;
       overflow: hidden;
 
+      /* Icones animations on click */
       input {
         appearance: none;
         width: 100%;
@@ -116,6 +117,7 @@
             font-size: 17px
           }
 
+          /* Text cropping */
           p {
             text-overflow: ellipsis;
             white-space: nowrap;
