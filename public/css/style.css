@@ -1,3 +1,5 @@
+/* Items animations menu pages*/
+/* Title animation menu pages */
 *,
 ::before,
 ::after {
@@ -50,6 +52,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
+  /* Heart animation */
 }
 .heart-container__heart2 {
   position: relative;
@@ -305,6 +308,7 @@ header .location .description__txt {
   animation: slide-top 0.5s ease-in-out forwards;
   opacity: 0;
   overflow: hidden;
+  /* Icones animations on click */
 }
 .menu__categories .item:nth-child(1) {
   animation-delay: 0.2s;
@@ -361,6 +365,7 @@ header .location .description__txt {
   line-height: 1.4;
   padding: 10px;
   min-width: 80%;
+  /* Text cropping */
 }
 .menu__categories .item__container .dish h3 {
   font-weight: 500;
