@@ -7,7 +7,7 @@
   - Objectif : développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.
 
 
-  **[Voir le projet en ligne](https://davidpayet.github.io/ohmyfod/)**
+  **[Voir le projet en ligne](https://davidpayet.github.io/ohmyfood/)**
   
 
 ## Spécificités
